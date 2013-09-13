@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.ui.theme" value="simple" />
+<constant name="struts.devMode" value="false" />
+
+	<package name="Admin" namespace="/admin" extends="struts-default">
+		
+		<action name="update" class="com.port.bustimetable.action.ConfigureAction">
+			<result name="success">/pages/admin/busUser.jsp</result>
+		</action>
+		
+		<action name="edit" class="com.port.bustimetable.action.ConfigureAction">
+			<result name="success">/pages/admin/configure.jsp</result>
+		</action>
+		
+		<action name="saveEdit" method="saveConfig" class="com.port.bustimetable.action.ConfigureAction">
+			<result name="success">/pages/admin/configurationSaved.jsp</result>
+			<result name="input">/pages/admin/configure.jsp</result>
+		</action>
+		
+				
+		<action name="initial" class="com.port.bustimetable.action.InitialBusTimesAction">
+			<result name="success">/pages/admin/initial.jsp</result>
+		</action>
+		
+	</package>
+	
+	<package name="user" namespace="/" extends="struts-default">
+		
+		<action name="home" class="com.port.bustimetable.action.GetLocationAction">
+			<result name="success">pages/index.jsp</result>
+		</action>
+
+		<action name="info" class="com.port.bustimetable.action.InfoAction">
+			<result name="success">pages/info.jsp</result>
+		</action>
+		
+		<action name="timetable" class="com.port.bustimetable.action.GetTimetableAction">
+			<result name="success">
+				/pages/Timetable.jsp
+			</result>
+			<result name="input">
+				/pages/Error.jsp
+			</result>
+		</action>
+		
+		<action name="timetableAjax" class="com.port.bustimetable.action.GetTimetableAction">
+        	 <result name="success" type="stream">
+			    <param name="contentType">application/json</param>
+			    <param name="inputName">inputStream</param>
+			 </result>
+			<result name="input">
+				/pages/Error.jsp
+			</result>
+      	</action>
+
+	</package>
+
+</struts>    
