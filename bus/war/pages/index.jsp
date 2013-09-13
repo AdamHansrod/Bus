@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="google-site-verification" content="q_grWpPnz5EQsHIx2h4tEuYM5lxBQ1HmYkmfs1pQeQw" />
-        <title>University of Portsmouth - Inter-Site Bus</title>
+        <title>Bus</title>
         <meta name="description" content="University of Portsmouth Bus Timetable">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/png" href="${pageContext.request.contextPath}/images/favicon.ico">
@@ -81,7 +81,7 @@
 <div class="screen">
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title"><p>University of Portsmouth</p> <a href="<s:property value='/home' />">Inter-Site Bus</a></h1>
+                <h1 class="title"><p></p> <a href="<s:property value='/home' />">Bus</a></h1>
                 <div id="StatusDivider"><p class="Status">Status:  <img src="${pageContext.request.contextPath}/images/<s:property value='status' />" alt="<s:property value='status_text' />"></p>
                 <p class="Status_Text"><s:property value='status_text' /></p>
                 </div>
@@ -166,7 +166,7 @@
 					 full timetables. Further information <a href="<s:url action='info'/>"><img src="${pageContext.request.contextPath}/images/information.png"></a>
 				</p>
 				<p>
-				&copy; University of Portsmouth
+				&copy; Adam Hansrod
 				</p>
             </footer>
         </div>

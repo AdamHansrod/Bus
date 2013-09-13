@@ -21,7 +21,7 @@
 <div class="screen">
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title"><p>University of Portsmouth</p> <a href="<s:url action='home'/>">Inter-Site Bus</a></h1>
+                <h1 class="title"><p></p> <a href="<s:url action='home'/>">Bus</a></h1>
                 <p class="Status">Status:  <img src="${pageContext.request.contextPath}/images/<s:property value='status' />"></p>
                 <p class="Status_Text"><s:property value='status_text' /></p>
             </header>
@@ -55,7 +55,7 @@
 					 full timetables. Other information <a href="<s:url action='info'/>"><img src="${pageContext.request.contextPath}/images/information.png"></a>
 				</p>
 				<p>
-				&copy; University of Portsmouth
+				&copy; Adam Hansrod
 				</p>
             </footer>
         </div>
