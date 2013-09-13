@@ -19,5 +19,5 @@ Important! You're workspace can't have a space in it's name e.g.
 		
 The Freemaker.core.TextBlock class is required as well as the Struts2ListenerOnGAE class for struts to work on GAE
 
-the css.css file is for the location.jsp/timetable.jsp pages only, otherwise disregard, 
-	this old stuff is kept in, if anyone wants to see how it would work :)
+the css.css file is for the location.jsp pages only, otherwise disregard, 
+	this file is old stuff is kept in, if anyone wants to see how it would work :)
