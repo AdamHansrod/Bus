@@ -13,3 +13,5 @@ The project itself uses the Objectify API to access the Google Datastore to stor
 If you wish to build the project, once you have it running locally run the /admin/initial.action so the data is intially loaded, otherwise you'll encounter errors about accessing stuff that doesn't exist. 
 
 At the momnent the admin area restriction is commented out in the web.xml file, if you uncomment it and plan on deploying a version of the app, then you'll need to set up admin's in the Google App Engine Admin Console.
+
+Of note is the use of @media queries in the css to produce a fully mobile and tablet responsive design, it has been designed to look good on some common device widths.
