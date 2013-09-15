@@ -1,12 +1,9 @@
 Bus
 ===
 
-A Struts2 webapp on Google App Engine to show the UoP Bus Timetable
+Bus is a Struts2 webapp on Google App Engine to show the University of Portsmouth Bus Timetable.
 
-
-A copy of the work and research i did prior to leaving the University of Portsmouth Applications Development and Maintenance team.
-
-They wanted to be able to use the Struts2 java web application framework on top of the Google App Engine platform, this was an example of this work.
+The project was a copy of the work and research i did prior to leaving the University of Portsmouth Applications Development and Maintenance team, and is provided as a working example for others to learn how to build Struts2 webapps on Google App Engine.
 
 The project itself uses the Objectify API to access the Google Datastore to store the information that could be wanted to updated by an Admin.
 
@@ -14,4 +11,12 @@ If you wish to build the project, once you have it running locally run the /admi
 
 At the momnent the admin area restriction is commented out in the web.xml file, if you uncomment it and plan on deploying a version of the app, then you'll need to set up admin's in the Google App Engine Admin Console.
 
-Of note is the use of @media queries in the css to produce a fully mobile and tablet responsive design, it has been designed to look good on some common device widths.
+The webpages were designed to be fully responsive and are partly based off <a href="www.intializr.com">Initalizr's</a> responsive template, which uses Respond.js and Modernizr.
+
+The webpages have been further customized to allow for touch based use, and includes touch icons if a user decides to save a link to the webapp on their mobile device homescreen.
+
+
+Dependancies
+===
+
+The project needs no additional libraries, however as the Google App Engine SDK versions are updated anyone wishing to use the app will need to update the relevant jar files in the /lib folder.
